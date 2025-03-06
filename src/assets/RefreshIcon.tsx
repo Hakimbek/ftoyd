@@ -1,7 +1,12 @@
+import { selectIsLoading } from '../app/apiSlice.ts';
+import { useAppSelector } from '../app/hooks.ts';
+
 const RefreshIcon = () => {
+  const isLoading = useAppSelector(selectIsLoading);
+
   return (
     <svg
-      // className="rotate"
+      className={isLoading ? 'rotate' : ''}
       width="26"
       height="26"
       viewBox="0 0 26 26"

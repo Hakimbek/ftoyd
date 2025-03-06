@@ -27,6 +27,9 @@ export default tseslint.config(
       'react-compiler': reactCompiler,
     },
     rules: {
+      '@typescript-eslint/no-invalid-void-type': [
+        'warn',
+      ],
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
