@@ -39,3 +39,11 @@
 .refresh-button:disabled {
     background-color: #701328;
 }
+
+@keyframes spinner {
+    from { transform: rotate(360deg); }
+}
+
+.rotate{
+    animation: spinner 1.5s linear infinite;
+}
