@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Tactic Sans";
+    src: url("../assets/fonts/TacticSans-MedIt.otf") format("truetype");
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-family: "Tactic Sans", sans-serif;
+}
