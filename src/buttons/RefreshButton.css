@@ -1,4 +1,4 @@
-.container {
+.button-container {
     display: flex;
     gap: 12px;
 }
@@ -38,6 +38,7 @@
 
 .refresh-button:disabled {
     background-color: #701328;
+    cursor: not-allowed;
 }
 
 @keyframes spinner {

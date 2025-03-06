@@ -1,15 +1,16 @@
 import Header from './header/Header.tsx';
 import { useGetGamesQuery } from './app/apiSlice.ts';
+import CardList from './card/CardList.tsx';
 
 import './App.css';
 
 function App() {
   const { data } = useGetGamesQuery();
-  console.log(data);
 
   return (
     <>
       <Header />
+      {data && <CardList matches={data.data.matches} />}
     </>
   );
 }

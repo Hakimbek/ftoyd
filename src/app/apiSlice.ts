@@ -21,4 +21,6 @@ export const { useGetGamesQuery } = apiSlice;
 const selectGetGames = apiSlice.endpoints.getGames.select();
 export const selectIsLoading = (state: RootState) =>
   selectGetGames(state).isLoading;
+export const selectIsError = (state: RootState) =>
+  selectGetGames(state).isError;
 export const refetchGames = apiSlice.util.invalidateTags(['Games']);

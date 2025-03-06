@@ -1,6 +1,6 @@
 import Team from './Team.ts';
 
-enum MatchStatus {
+export enum MatchStatus {
   SCHEDULED = 'Scheduled',
   ONGOING = 'Ongoing',
   FINISHED = 'Finished',

@@ -1,6 +1,8 @@
 import Match from './Match.ts';
 
 export default interface Response {
-  matches: Match[];
+  data: {
+    matches: Match[];
+  };
   ok: boolean;
 }
