@@ -1,9 +1,9 @@
 import Card from './Card.tsx';
-import Match from '../dto/Match.ts';
+import { Matches } from '../dto/Match.ts';
 
 import './CardList.css';
 
-const CardList = ({ matches }: { matches: Match[] }) => {
+const CardList = ({ matches }: Matches) => {
   return (
     <div className="cards-container">
       {matches.map((match) => (

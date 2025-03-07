@@ -1,8 +1,6 @@
-import Match from './Match.ts';
+import { Matches } from './Match.ts';
 
 export default interface Response {
-  data: {
-    matches: Match[];
-  };
+  data: Matches;
   ok: boolean;
 }

@@ -15,3 +15,7 @@ export default interface Match {
   awayScore: number;
   status: MatchStatus;
 }
+
+export interface Matches {
+  matches: Match[];
+}
