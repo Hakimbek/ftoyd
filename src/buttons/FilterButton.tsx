@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ArrowIcon from '../assets/ArrowIcon.tsx';
+import ArrowIcon from '../assets/FilterArrowIcon.tsx';
 import { FilterType } from '../dto/Filter.ts';
 import { useAppDispatch, useAppSelector } from '../app/hooks.ts';
 import { updateFilter, selectFilter } from '../app/filterSlice.ts';
@@ -17,7 +17,7 @@ const FilterButton = () => {
   };
 
   return (
-    <div>
+    <div className="filter-container">
       <button className="filter-button" onClick={() => setIsActive(!isActive)}>
         {filterStatus}
         <ArrowIcon isActive={isActive} />

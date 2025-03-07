@@ -4,7 +4,7 @@ interface ArrowIconPropsType {
   isActive: boolean;
 }
 
-const ArrowIcon = ({ isActive }: ArrowIconPropsType) => {
+const FilterArrowIcon = ({ isActive }: ArrowIconPropsType) => {
   return (
     <svg
       className={`arrow-icon ${isActive ? 'transform' : ''}`}
@@ -19,4 +19,4 @@ const ArrowIcon = ({ isActive }: ArrowIconPropsType) => {
   );
 };
 
-export default memo(ArrowIcon);
+export default memo(FilterArrowIcon);

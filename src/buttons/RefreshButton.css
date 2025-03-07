@@ -48,3 +48,17 @@
 .rotate{
     animation: spinner 1.5s linear infinite;
 }
+
+@media (max-width: 1300px) {
+    .button-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1000px) {
+    .button-container {
+        width: 100%;
+        flex-direction: column;
+    }
+}

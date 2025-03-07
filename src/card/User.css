@@ -1,0 +1,32 @@
+.user-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: #101318;
+    border-radius: 4px;
+}
+
+.username {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.kills {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FAFAFA66;
+
+    .kills-count {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+    }
+}
