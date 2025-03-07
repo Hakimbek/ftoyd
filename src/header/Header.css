@@ -10,6 +10,12 @@
     margin-bottom: 20px;
 }
 
+.left-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 .logo {
     margin: 0;
     font-family: "Tactic Sans", sans-serif;

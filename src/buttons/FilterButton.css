@@ -1,0 +1,80 @@
+.filter-button {
+    min-width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0B0E12;
+    color: #B4B5B6;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    fill: #B4B5B6;
+}
+
+.filter-button:hover {
+    color: white;
+    background-color: #0F1318;
+
+    .arrow-icon {
+        fill: white;
+    }
+}
+
+.filter-button:active {
+    color: white;
+    background-color: #0B0E12;
+    border: 1px solid #171D25;
+
+    .arrow-icon {
+        fill: white;
+    }
+}
+
+.transform {
+    transform: rotate(180deg);
+}
+
+.filter-options {
+    position: absolute;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    background-color: #0F1318;
+    border-radius: 4px;
+
+    .option-button {
+        padding: 12px;
+        background-color: transparent;
+        border: none;
+        color: #B4B5B6;
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .option-button:hover {
+        background-color: #11161D;
+        color: white;
+    }
+
+    .option-button:active {
+        background-color: #0D1115;
+    }
+
+    .option-button:disabled {
+        background-color: #0F1318;
+        color: #68696A;
+        cursor: not-allowed;
+    }
+}
