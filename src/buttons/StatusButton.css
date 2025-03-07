@@ -32,3 +32,10 @@
 .finished::before {
     content: 'Finished';
 }
+
+@media (max-width: 800px) {
+    .status-button {
+        min-width: 50px;
+        padding: 4px;
+    }
+}

@@ -52,7 +52,7 @@
 @media (max-width: 1300px) {
     .button-container {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     }
 }
 
