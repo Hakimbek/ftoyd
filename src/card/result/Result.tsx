@@ -2,6 +2,7 @@ import LogoIcon from '../../assets/svg/logo/LogoIcon.tsx';
 import StatusButton from '../../buttons/status/StatusButton.tsx';
 import DetailsArrowIcon from '../../assets/svg/arrow/DetailsArrowIcon.tsx';
 import { MatchStatus } from '../../dto/Match.ts';
+import { motion } from 'framer-motion';
 
 import './Result.css';
 
@@ -31,7 +32,15 @@ const Result = ({
         </div>
         <div className="score-status-container">
           <div className="score inter-font">
-            {homeScore} : {awayScore}
+            <motion.div
+              key={`${homeScore}-${awayScore}`}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 1.2 }}
+              transition={{ duration: 0.4 }}
+            >
+              {homeScore} : {awayScore}
+            </motion.div>
           </div>
           <StatusButton status={status} />
         </div>
