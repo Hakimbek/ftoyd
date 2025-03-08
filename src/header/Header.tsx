@@ -1,13 +1,13 @@
-import RefreshButton from '../buttons/RefreshButton.tsx';
-import FilterButton from '../buttons/FilterButton.tsx';
+import RefreshButton from '../buttons/refresh/RefreshButton.tsx';
+import FilterButton from '../buttons/filter/FilterButton.tsx';
 
 import './Header.css';
 
 const Header = () => {
   return (
-    <header className="header-container">
-      <div className="left-container">
-        <h1 className="logo">Match Tracker</h1>
+    <header className="header flex">
+      <div className="logo flex">
+        <h1 className="logo__text tactic-font">Match Tracker</h1>
         <FilterButton />
       </div>
       <RefreshButton />

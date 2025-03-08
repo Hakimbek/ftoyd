@@ -1,7 +1,7 @@
 import Match from '../dto/Match.ts';
-import Result from './Result.tsx';
+import Result from './result/Result.tsx';
 import { useState } from 'react';
-import Details from './Details.tsx';
+import Details from './details/Details.tsx';
 
 import './Card.css';
 

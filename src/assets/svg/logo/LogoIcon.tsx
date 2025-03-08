@@ -1,3 +1,5 @@
+import './LogoIcon.css';
+
 const LogoIcon = () => {
   return (
     <svg

@@ -1,7 +1,80 @@
-body {
-  margin: 0;
-  padding: 42px;
-  background-color: #090909;
-  color: white;
+@font-face {
+  font-family: "Tactic Sans";
+  src: url("./assets/fonts/TacticSans-MedIt.otf") format("truetype");
 }
 
+:root {
+  --rich-black: #090909;
+  --deep-blue: #101318;
+  --gray-blue: #0B0E12;
+  --obsidian-blue: #0D1115;
+  --charcoal-blue: #0F1318;
+  --midnight-blue: #11161D;
+  --dark-blue: #171D25;
+  --orange: #EB6402;
+  --green: #43AD28;
+  --crimson-red: #EB0237;
+  --ruby-red: #A01131;
+  --dark-red: #701328;
+  --obsidian-gray: #13181F;
+  --steel-gray: #313A47;
+  --dark-gary: #68696A;
+  --light-gray: #FAFAFA66;
+  --silver-gary: #B4B5B6;
+  --white: #ffffff;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 42px;
+  background-color: var(--rich-black);
+  color: var(--white);
+}
+
+.inter-font {
+  font-family: Inter, sans-serif;
+}
+
+.tactic-font {
+  font-family: "Tactic Sans", sans-serif;
+}
+
+.font-big {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-normal {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.font-small {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 16px;
+
+    .font-big {
+      font-size: 14px;
+    }
+
+    .font-normal {
+      font-size: 12px;
+    }
+
+    .font-small {
+      font-size: 10px;
+    }
+  }
+}

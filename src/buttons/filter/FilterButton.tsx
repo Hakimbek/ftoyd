@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import ArrowIcon from '../assets/FilterArrowIcon.tsx';
-import { FilterType } from '../dto/Filter.ts';
-import { useAppDispatch, useAppSelector } from '../app/hooks.ts';
-import { updateFilter, selectFilter } from '../app/filterSlice.ts';
+import ArrowIcon from '../../assets/svg/arrow/FilterArrowIcon.tsx';
+import { FilterType } from '../../dto/Filter.ts';
+import { useAppDispatch, useAppSelector } from '../../app/hooks.ts';
+import { updateFilter, selectFilter } from '../../app/filterSlice.ts';
 
 import './FilterButton.css';
 
@@ -17,18 +17,21 @@ const FilterButton = () => {
   };
 
   return (
-    <div className="filter-container">
-      <button className="filter-button" onClick={() => setIsActive(!isActive)}>
+    <div className="filter">
+      <button
+        className="button inter-font font-normal flex"
+        onClick={() => setIsActive(!isActive)}
+      >
         {filterStatus}
         <ArrowIcon isActive={isActive} />
       </button>
       {isActive && (
-        <div className="filter-options">
+        <div className="options">
           {Object.values(FilterType).map((filterItem) => (
             <button
               key={filterItem}
               disabled={filterStatus === filterItem}
-              className="option-button"
+              className="option-button inter-font font-normal"
               onClick={() => handleClick(filterItem)}
             >
               {filterItem}

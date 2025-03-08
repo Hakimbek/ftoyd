@@ -1,0 +1,31 @@
+.user {
+    width: 100%;
+    gap: 8px;
+    padding: 8px 24px;
+    background-color: var(--deep-blue);
+    border-radius: 4px;
+
+    .username {
+        gap: 8px;
+    }
+
+    .kills {
+        color: var(--light-gray);
+
+        .kills-count {
+            color: var(--white);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .user {
+        flex-direction: column;
+        padding: 7px 12px;
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

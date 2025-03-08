@@ -1,40 +1,28 @@
-@font-face {
-    font-family: "Tactic Sans";
-    src: url("../assets/fonts/TacticSans-MedIt.otf") format("truetype");
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
     margin-bottom: 20px;
-}
 
-.left-container {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
+    .logo {
+        gap: 24px;
 
-.logo {
-    margin: 0;
-    font-family: "Tactic Sans", sans-serif;
+        .logo__text {
+            margin: 0;
+        }
+    }
 }
 
 @media (max-width: 1300px) {
-    .header-container {
+    .header {
         flex-direction: column;
         gap: 10px;
-    }
 
-    .left-container {
-        width: 100%;
-        justify-content: space-between;
+        .logo {
+            width: 100%;
+        }
     }
 }
 
 @media (max-width: 600px) {
-    .left-container {
+    .logo {
         flex-direction: column;
         gap: 14px;
     }

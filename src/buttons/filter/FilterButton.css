@@ -1,0 +1,75 @@
+.filter {
+    .button {
+        min-width: 170px;
+        gap: 12px;
+        padding: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--gray-blue);
+        color: var(--silver-gary);
+        cursor: pointer;
+    }
+
+    .button:hover {
+        color: var(--white);
+        background-color: var(--charcoal-blue);
+
+        .arrow-icon {
+            fill: var(--white);
+        }
+    }
+
+    .button:active {
+        color: var(--white);
+        background-color: var(--gray-blue);
+        border: 1px solid var(--dark-blue);
+
+        .arrow-icon {
+            fill: var(--white);
+        }
+    }
+
+    .options {
+        position: absolute;
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        background-color: var(--charcoal-blue);
+        border-radius: 4px;
+
+        .option-button {
+            padding: 12px;
+            background-color: transparent;
+            border: none;
+            color: var(--silver-gary);
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .option-button:hover {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+        }
+
+        .option-button:active {
+            background-color: var(--obsidian-blue);
+        }
+
+        .option-button:disabled {
+            background-color: var(--charcoal-blue);
+            color: var(--dark-gary);
+            cursor: not-allowed;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .filter {
+        width: 100%;
+
+        .button {
+            width: 100%;
+        }
+    }
+}

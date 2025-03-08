@@ -1,11 +1,11 @@
-import RefreshIcon from '../assets/RefreshIcon.tsx';
-import AlertIcon from '../assets/AlertIcon.tsx';
-import { useAppDispatch, useAppSelector } from '../app/hooks.ts';
+import RefreshIcon from '../../assets/svg/refresh/RefreshIcon.tsx';
+import AlertIcon from '../../assets/svg/alert/AlertIcon.tsx';
+import { useAppDispatch, useAppSelector } from '../../app/hooks.ts';
 import {
   refetchGames,
   selectIsLoading,
   selectIsError,
-} from '../app/apiSlice.ts';
+} from '../../app/apiSlice.ts';
 
 import './RefreshButton.css';
 
@@ -15,15 +15,15 @@ const RefreshButton = () => {
   const isError = useAppSelector(selectIsError);
 
   return (
-    <div className="button-container">
+    <div className="refresh flex">
       {isError && (
-        <div className="alert">
+        <div className="alert inter-font font-big flex">
           <AlertIcon />
           Ошибка: не удалось загрузить информацию
         </div>
       )}
       <button
-        className="refresh-button"
+        className="button inter-font font-big flex"
         disabled={isLoading}
         onClick={() => dispatch(refetchGames)}
       >

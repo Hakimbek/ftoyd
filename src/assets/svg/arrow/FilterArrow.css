@@ -1,0 +1,7 @@
+.arrow-icon {
+    fill:var(--silver-gary);
+}
+
+.transform {
+    transform: rotate(180deg);
+}

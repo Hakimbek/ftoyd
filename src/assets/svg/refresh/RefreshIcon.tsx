@@ -1,5 +1,7 @@
-import { selectIsLoading } from '../app/apiSlice.ts';
-import { useAppSelector } from '../app/hooks.ts';
+import { selectIsLoading } from '../../../app/apiSlice.ts';
+import { useAppSelector } from '../../../app/hooks.ts';
+
+import './RefreshIcon.css';
 
 const RefreshIcon = () => {
   const isLoading = useAppSelector(selectIsLoading);

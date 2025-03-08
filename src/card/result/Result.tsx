@@ -1,7 +1,7 @@
-import LogoIcon from '../assets/LogoIcon.tsx';
-import StatusButton from '../buttons/StatusButton.tsx';
-import DetailsArrowIcon from '../assets/DetailsArrowIcon.tsx';
-import { MatchStatus } from '../dto/Match.ts';
+import LogoIcon from '../../assets/svg/logo/LogoIcon.tsx';
+import StatusButton from '../../buttons/status/StatusButton.tsx';
+import DetailsArrowIcon from '../../assets/svg/arrow/DetailsArrowIcon.tsx';
+import { MatchStatus } from '../../dto/Match.ts';
 
 import './Result.css';
 
@@ -23,19 +23,19 @@ const Result = ({
   isActive,
 }: ResultProps) => {
   return (
-    <div className="result-container">
-      <div className="result">
-        <div className="team-name">
+    <div className="result-container flex">
+      <div className="result flex">
+        <div className="team-name inter-font font-normal flex">
           <LogoIcon />
           {homeTeamName}
         </div>
         <div className="score-status-container">
-          <div className="score">
+          <div className="score inter-font">
             {homeScore} : {awayScore}
           </div>
           <StatusButton status={status} />
         </div>
-        <div className="team-name">
+        <div className="team-name inter-font font-normal flex">
           {awayTeamName}
           <LogoIcon />
         </div>

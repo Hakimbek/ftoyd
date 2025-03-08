@@ -1,0 +1,18 @@
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .users {
+        width: 100%;
+        display: flex;
+        gap: 8px;
+    }
+
+    .additional-details {
+        margin-top: 8px;
+        padding: 14px 24px;
+        background-color: var(--deep-blue);
+        border-radius: 4px;
+    }
+}

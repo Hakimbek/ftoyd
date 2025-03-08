@@ -1,5 +1,7 @@
 import { memo } from 'react';
 
+import './FilterArrow.css';
+
 interface ArrowIconPropsType {
   isActive: boolean;
 }

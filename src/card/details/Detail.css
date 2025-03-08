@@ -1,0 +1,7 @@
+.detail {
+    color: var(--light-gray);
+
+    .value {
+        color: var(--white);
+    }
+}

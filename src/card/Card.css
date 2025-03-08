@@ -1,6 +1,6 @@
 .card-container {
     padding: 16px 36px;
-    background-color: #0B0E12;
+    background-color: var(--gray-blue);
     border-radius: 4px;
     cursor: pointer;
 }
