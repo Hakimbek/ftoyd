@@ -4,30 +4,30 @@
     border: none;
     border-radius: 4px;
     color: var(--white);
+}
 
-    .scheduled {
-        background-color: var(--orange);
-    }
+.scheduled {
+    background-color: var(--orange);
+}
 
-    .scheduled::before {
-        content: 'Match preparing';
-    }
+.scheduled::before {
+    content: 'Match preparing';
+}
 
-    .ongoing {
-        background-color: var(--green);
-    }
+.ongoing {
+    background-color: var(--green);
+}
 
-    .ongoing::before {
-        content: 'Live';
-    }
+.ongoing::before {
+    content: 'Live';
+}
 
-    .finished {
-        background-color: var(--crimson-red);
-    }
+.finished {
+    background-color: var(--crimson-red);
+}
 
-    .finished::before {
-        content: 'Finished';
-    }
+.finished::before {
+    content: 'Finished';
 }
 
 @media (max-width: 800px) {

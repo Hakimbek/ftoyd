@@ -12,6 +12,28 @@ export const apiSlice = createApi({
     getGames: builder.query<Response, void>({
       query: () => '/fronttemp',
       providesTags: ['Games'],
+      async onCacheEntryAdded(
+        _unused,
+        { updateCachedData, cacheDataLoaded, cacheEntryRemoved }
+      ) {
+        const ws = new WebSocket('wss://app.ftoyd.com/fronttemp-service/ws');
+
+        try {
+          await cacheDataLoaded;
+
+          ws.onmessage = (event) => {
+            const newMessage = JSON.parse(event.data);
+            updateCachedData((draft) => {
+              draft.data.matches = newMessage.data;
+            });
+          };
+        } catch (error) {
+          console.error('WebSocket error:', error);
+        }
+
+        await cacheEntryRemoved;
+        ws.close();
+      },
     }),
   }),
 });
